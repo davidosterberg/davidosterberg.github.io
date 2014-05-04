@@ -1,243 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        <meta charset="utf-8" />
-        <title>Precision Guesswork</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Precision Guesswork</title><link href="/" rel="alternate"></link><link href="/atom.xml" rel="self"></link><id>/</id><updated>2014-05-04T15:42:00+02:00</updated><entry><title>The art of folding boats</title><link href="/the-art-of-folding-boats.html" rel="alternate"></link><updated>2014-05-04T15:42:00+02:00</updated><author><name>David</name></author><id>tag:,2014-05-04:the-art-of-folding-boats.html</id><summary type="html">&lt;p&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;The &lt;a href="http://www.f-boat.com/pages/introduction/folding.html"&gt;Farrier folding system&lt;/a&gt; is a popular design for folding trimarans. The system is elegant but tweaking the precise geometry of the linkages when adopting the system for your own design can be tricky. This is because the folded geometry is sensitive to the locations of the hinge points at the same time it is difficult to understand exactly how without some kinematic&amp;nbsp;analysis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;input type="checkbox" class="toggle" id="toggle16"/&gt;
+&lt;label for="toggle16" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
+&lt;div class="input"&gt;
 
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
- 
-<!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-  "HTML-CSS": {
-  styles: {
-  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-  },
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
-  });
-  MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
-  var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
-  VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
-  VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
-  VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
-  VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
-  });
-  MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
-  var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
-  VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
-  VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
-  VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
-  VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
-  });
-</script>
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Image&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.f-boat.com/media/F-27/F-27foldingw.jpg&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-<!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script> -->
- 
-      
-
-<style type="text/css">
-.highlight .hll { background-color: #ffffcc }
-.highlight  { background: #f8f8f8; }
-.highlight .c { color: #408080; font-style: italic } /* Comment */
-.highlight .err { border: 1px solid #FF0000 } /* Error */
-.highlight .k { color: #008000; font-weight: bold } /* Keyword */
-.highlight .o { color: #666666 } /* Operator */
-.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
-.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
-.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
-.highlight .gd { color: #A00000 } /* Generic.Deleted */
-.highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #FF0000 } /* Generic.Error */
-.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
-.highlight .gi { color: #00A000 } /* Generic.Inserted */
-.highlight .go { color: #888888 } /* Generic.Output */
-.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
-.highlight .gs { font-weight: bold } /* Generic.Strong */
-.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.highlight .gt { color: #0044DD } /* Generic.Traceback */
-.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
-.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
-.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
-.highlight .kp { color: #008000 } /* Keyword.Pseudo */
-.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
-.highlight .kt { color: #B00040 } /* Keyword.Type */
-.highlight .m { color: #666666 } /* Literal.Number */
-.highlight .s { color: #BA2121 } /* Literal.String */
-.highlight .na { color: #7D9029 } /* Name.Attribute */
-.highlight .nb { color: #008000 } /* Name.Builtin */
-.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
-.highlight .no { color: #880000 } /* Name.Constant */
-.highlight .nd { color: #AA22FF } /* Name.Decorator */
-.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
-.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
-.highlight .nf { color: #0000FF } /* Name.Function */
-.highlight .nl { color: #A0A000 } /* Name.Label */
-.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
-.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
-.highlight .nv { color: #19177C } /* Name.Variable */
-.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
-.highlight .w { color: #bbbbbb } /* Text.Whitespace */
-.highlight .mf { color: #666666 } /* Literal.Number.Float */
-.highlight .mh { color: #666666 } /* Literal.Number.Hex */
-.highlight .mi { color: #666666 } /* Literal.Number.Integer */
-.highlight .mo { color: #666666 } /* Literal.Number.Oct */
-.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
-.highlight .sc { color: #BA2121 } /* Literal.String.Char */
-.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
-.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
-.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
-.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
-.highlight .sx { color: #008000 } /* Literal.String.Other */
-.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
-.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
-.highlight .ss { color: #19177C } /* Literal.String.Symbol */
-.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.highlight .vc { color: #19177C } /* Name.Variable.Class */
-.highlight .vg { color: #19177C } /* Name.Variable.Global */
-.highlight .vi { color: #19177C } /* Name.Variable.Instance */
-.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-</style>
-
-<style type="text/css">
-/* Overrides of notebook CSS for static HTML export */
-div.entry-content {
-  overflow: visible;
-  padding: 8px;
-}
-.input_area {
-  padding: 0.2em;
-}
-
-a.heading-anchor {
- white-space: normal;
-}
-
-.rendered_html
-code {
- font-size: .8em;
-}
-
-pre.ipynb {
-  color: black;
-  background: #f7f7f7;
-  border: none;
-  box-shadow: none;
-  margin-bottom: 0;
-  padding: 0;
-  margin: 0px;
-  font-size: 13px;
-}
-
-/* remove the prompt div from text cells */
-div.text_cell .prompt {
-    display: none;
-}
-
-/* remove horizontal padding from text cells, */
-/* so it aligns with outer body text */
-div.text_cell_render {
-    padding: 0.5em 0em;
-}
-
-img.anim_icon{padding:0; border:0; vertical-align:middle; -webkit-box-shadow:none; -box-shadow:none}
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-.toggle { 
-    display: none;
-}
-.toggle-label {
-    display: inline;
-    cursor: pointer;
-    margin-bottom: 1px;
-    font-size: 11px;
-    color: #999;
-    background: #fff;
-    border-radius: 5px;
-    padding: 5px;
-}
-.input {
-    display: none !important;
-}
-.toggle:checked ~ .input {
-    display:-webkit-box !important;
-    display:-moz-box !important;
-    display:-ms-flexbox !important;
-    display:box !important;
-    display:flex !important;
-}
-
-</style>
-
-<script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
-
- 
-</head>
-
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Precision Guesswork </a></h1>
-                <nav><ul>
-                    <li><a href="/category/books.html">Books</a></li>
-                    <li><a href="/category/engineering.html">Engineering</a></li>
-                    <li><a href="/category/linux.html">Linux</a></li>
-                    <li><a href="/category/opinion.html">Opinion</a></li>
-                    <li><a href="/category/science.html">Science</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/the-art-of-folding-boats.html">The art of folding&nbsp;boats</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2014-05-04T15:42:00">
-                Sön 04 Maj 2014
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="/author/david.html">David</a>
-        </address>
-<p>In <a href="/category/engineering.html">Engineering</a>. </p>
-<p>tags: <a href="/tag/engineering.html">engineering</a><a href="/tag/kinematics.html">kinematics</a></p>
-</footer><!-- /.post-info --><p>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The <a href="http://www.f-boat.com/pages/introduction/folding.html">Farrier folding system</a> is a popular design for folding trimarans. The system is elegant but tweaking the precise geometry of the linkages when adopting the system for your own design can be tricky. This is because the folded geometry is sensitive to the locations of the hinge points at the same time it is difficult to understand exactly how without some kinematic&nbsp;analysis.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<input type="checkbox" class="toggle" id="toggle16"/>
-<label for="toggle16" class="toggle-label"/>Show/hide code</label>
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight-ipynb"><pre class="ipynb"><span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="s">&quot;http://www.f-boat.com/media/F-27/F-27foldingw.jpg&quot;</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
-<div class="output_wrapper">
-<div class="output">
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 
 
-<div class="output_area"><div class="prompt"></div>
-
-
-<div class="output_jpeg output_subarea ">
-<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7RfSUGhvdG9zaG9wIDMuMAA4QklNA+kAAAAAAHgAAwAAAEgA
+&lt;div class="output_jpeg output_subarea "&gt;
+&lt;img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7RfSUGhvdG9zaG9wIDMuMAA4QklNA+kAAAAAAHgAAwAAAEgA
 SAAAAAAC2AIo/+H/4gL5AkYDRwUoA/wAAgAAAEgASAAAAAAC2AIoAAEAAABkAAAAAQADAwMAAAAB
 Jw8AAQABAAAAAAAAAAAAAAAAYAgAGQGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4
 QklNA+0AAAAAABAASAAAAAEAAQBIAAAAAQABOEJJTQQNAAAAAAAEAAAAeDhCSU0D8wAAAAAACAAA
@@ -929,48 +724,48 @@ OAP5TVN1+OQfRpO93Ljz/mLj0klPUlxkk6OKcO1jdB5lcqkmpewa8GAdVYYyt42uJAHZcOkkp78U
 1Boa32gGfEqRpc/3zJ8V58kjoh7d7X12F3uLR3kOhTAr9MseJkTvESfvXCpJBL3QfWWBtNYLhoZG
 pVa4HaR9EExtOklcckkaU9btqmIO+OPNJckkmqf/2Q==
 "
->
-</div>
+&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The design parameters are the coordinates of the points shown in the following&nbsp;diagram</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<input type="checkbox" class="toggle" id="toggle17"/>
-<label for="toggle17" class="toggle-label"/>Show/hide code</label>
-<div class="input">
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;The design parameters are the coordinates of the points shown in the following&amp;nbsp;diagram&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;input type="checkbox" class="toggle" id="toggle17"/&gt;
+&lt;label for="toggle17" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
+&lt;div class="input"&gt;
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight-ipynb"><pre class="ipynb"><span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="s">&#39;folding_variables.png&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">))</span>
-</pre></div>
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Image&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;folding_variables.png&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
-
-
-<div class="output_wrapper">
-<div class="output">
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-<div class="output_area"><div class="prompt"></div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2AAAAJACAYAAADrSQUmAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2AAAAJACAYAAADrSQUmAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xdc1+X+//HHBxARPY7SXLlQEw0cOMpUzBEZ5kjN0jL0
 lJWWAu5VIoVHVDTIkZqDMsuWuRM3kuZWREEtxdyWiAMH6/37g598I3DlB96M5/126+bheo/rCXiU
 l9eyGIZhICIiIiIiItnOxuwAIiIiIiIiBYUKMBERERERkRyiAkxERERERCSHqAATERERERHJISrA
@@ -1724,255 +1519,255 @@ AABgEQYYAAAAAFiEAQYAAAAAFmGAAQAAAIBFGGAAAAAAYBEGGAAAAABYhAEGAAAAABZhgAEAAACA
 RRhgAAAAAGARBhgAAAAAWIQBBgAAAAAWYYABAAAAgEX+H/rGg3c6y10YAAAAAElFTkSuQmCC
 "
 width=500
->
-</div>
+&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>It is convenient to work with complex numbers. The kinematic constrains of the system&nbsp;are:</p>
-<p><span class="math">\[
-| z_{1} - z_{3} | = | z_{10} - z_{30} |&nbsp;\]</span></p>
-<p><span class="math">\[
-| z_{4} - z_{2} | = | z_{40} - z_{20} |&nbsp;\]</span></p>
-<p><span class="math">\[
-z_{0} + (z_{30} - z_{00}) e^{i \theta} = z_{3}&nbsp;\]</span></p>
-<p><span class="math">\[
-z_{0} + (z_{40} - z_{00}) e^{i \theta} = z_{4}&nbsp;\]</span></p>
-<p>Solving this system for <span class="math">\(z_0\)</span> for a given <span class="math">\(\theta\)</span> will allow us to perform the transformation <span class="math">\(z \to z_0 + z e^{i\theta}\)</span> where <span class="math">\(z\)</span> is a coordinate expressed in the frame coordinates (centered at <span class="math">\(z_0\)</span>) and get the coordinates expressed in the global&nbsp;coordinates.</p>
-<p>In order to solve the kinematic equations I use the <strong>scipy.optimize.root</strong>&nbsp;function</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<input type="checkbox" class="toggle" id="toggle18"/>
-<label for="toggle18" class="toggle-label"/>Show/hide code</label>
-<div class="input">
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;It is convenient to work with complex numbers. The kinematic constrains of the system&amp;nbsp;are:&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\[
+| z_{1} - z_{3} | = | z_{10} - z_{30} |&amp;nbsp;\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\[
+| z_{4} - z_{2} | = | z_{40} - z_{20} |&amp;nbsp;\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\[
+z_{0} + (z_{30} - z_{00}) e^{i \theta} = z_{3}&amp;nbsp;\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\[
+z_{0} + (z_{40} - z_{00}) e^{i \theta} = z_{4}&amp;nbsp;\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Solving this system for &lt;span class="math"&gt;\(z_0\)&lt;/span&gt; for a given &lt;span class="math"&gt;\(\theta\)&lt;/span&gt; will allow us to perform the transformation &lt;span class="math"&gt;\(z \to z_0 + z e^{i\theta}\)&lt;/span&gt; where &lt;span class="math"&gt;\(z\)&lt;/span&gt; is a coordinate expressed in the frame coordinates (centered at &lt;span class="math"&gt;\(z_0\)&lt;/span&gt;) and get the coordinates expressed in the global&amp;nbsp;coordinates.&lt;/p&gt;
+&lt;p&gt;In order to solve the kinematic equations I use the &lt;strong&gt;scipy.optimize.root&lt;/strong&gt;&amp;nbsp;function&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;input type="checkbox" class="toggle" id="toggle18"/&gt;
+&lt;label for="toggle18" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
+&lt;div class="input"&gt;
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight-ipynb"><pre class="ipynb"><span class="o">%</span><span class="k">matplotlib</span> <span class="n">inline</span>
-<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">exp</span><span class="p">,</span> <span class="n">pi</span>
-<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">root</span>
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;matplotlib&lt;/span&gt; &lt;span class="n"&gt;inline&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;exp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pi&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scipy.optimize&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt;
 
-<span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; Express points z, expressed in the beam-fixed reference frame, in</span>
-<span class="sd">    in the boat-fixed reference frame. Optionally the user can supply</span>
-<span class="sd">    a z0 in order to save time. In this case the user is responsible to </span>
-<span class="sd">    make sure the transformation is correct.&quot;&quot;&quot;</span>
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z0&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Express points z, expressed in the beam-fixed reference frame, in&lt;/span&gt;
+&lt;span class="sd"&gt;    in the boat-fixed reference frame. Optionally the user can supply&lt;/span&gt;
+&lt;span class="sd"&gt;    a z0 in order to save time. In this case the user is responsible to &lt;/span&gt;
+&lt;span class="sd"&gt;    make sure the transformation is correct.&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     
-    <span class="k">def</span> <span class="nf">equations</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
-        <span class="n">z0</span><span class="p">,</span> <span class="n">z3</span><span class="p">,</span> <span class="n">z4r</span><span class="p">,</span> <span class="n">z4i</span> <span class="o">=</span> <span class="n">p</span>
-        <span class="n">z4</span> <span class="o">=</span> <span class="n">z4r</span><span class="o">+</span><span class="mi">1j</span><span class="o">*</span><span class="n">z4i</span>
-        <span class="n">eqs</span> <span class="o">=</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">z10</span><span class="o">-</span><span class="n">z3</span><span class="p">)</span><span class="o">-</span><span class="nb">abs</span><span class="p">(</span><span class="n">z30</span><span class="o">-</span><span class="n">z10</span><span class="p">),</span> 
-               <span class="nb">abs</span><span class="p">(</span><span class="n">z4</span><span class="o">-</span><span class="n">z20</span><span class="p">)</span><span class="o">-</span><span class="nb">abs</span><span class="p">(</span><span class="n">z40</span><span class="o">-</span><span class="n">z20</span><span class="p">),</span>
-               <span class="n">z0</span><span class="o">+</span><span class="p">(</span><span class="n">z30</span><span class="o">-</span><span class="n">z00</span><span class="p">)</span><span class="o">*</span><span class="n">exp</span><span class="p">(</span><span class="mi">1j</span><span class="o">*</span><span class="n">theta</span><span class="p">)</span><span class="o">-</span><span class="n">z3</span><span class="p">,</span>
-               <span class="n">z0</span><span class="o">+</span><span class="p">(</span><span class="n">z40</span><span class="o">-</span><span class="n">z00</span><span class="p">)</span><span class="o">*</span><span class="n">exp</span><span class="p">(</span><span class="mi">1j</span><span class="o">*</span><span class="n">theta</span><span class="p">)</span><span class="o">-</span><span class="n">z4</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">eqs</span>
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;equations&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;z0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z4r&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z4i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt;
+        &lt;span class="n"&gt;z4&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;z4r&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1j&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z4i&lt;/span&gt;
+        &lt;span class="n"&gt;eqs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+               &lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z4&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+               &lt;span class="n"&gt;z0&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;exp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1j&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+               &lt;span class="n"&gt;z0&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;exp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1j&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;eqs&lt;/span&gt;
     
-    <span class="k">def</span> <span class="nf">find_z0</span><span class="p">():</span>
-        <span class="n">sol</span> <span class="o">=</span> <span class="n">root</span><span class="p">(</span><span class="n">equations</span><span class="p">,</span> <span class="p">(</span><span class="n">z00</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="o">.</span><span class="n">real</span><span class="p">,</span> <span class="n">z40</span><span class="o">.</span><span class="n">imag</span><span class="p">),</span> <span class="n">method</span><span class="o">=</span><span class="s">&#39;krylov&#39;</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">sol</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">imag</span> <span class="o">&lt;=</span> <span class="n">z30</span><span class="o">.</span><span class="n">imag</span><span class="p">:</span>
-            <span class="n">sol</span> <span class="o">=</span> <span class="n">root</span><span class="p">(</span><span class="n">equations</span><span class="p">,</span> <span class="p">(</span><span class="n">z00</span><span class="o">+</span><span class="mi">300j</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="o">.</span><span class="n">real</span><span class="p">,</span> <span class="n">z40</span><span class="o">.</span><span class="n">imag</span><span class="p">),</span> <span class="n">method</span><span class="o">=</span><span class="s">&#39;krylov&#39;</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">sol</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;find_z0&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+        &lt;span class="n"&gt;sol&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;equations&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;method&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;krylov&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sol&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;sol&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;equations&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;300j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;method&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;krylov&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;sol&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 
-    <span class="k">if</span> <span class="n">z0</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
-        <span class="n">z0</span> <span class="o">=</span> <span class="n">find_z0</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">z0</span> <span class="o">+</span> <span class="n">z</span><span class="o">*</span><span class="n">exp</span><span class="p">(</span><span class="mi">1j</span><span class="o">*</span><span class="n">theta</span><span class="p">)</span> 
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;z0&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;z0&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;find_z0&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;z0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;exp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1j&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
 
-<span class="k">def</span> <span class="nf">plot_frame_raw</span><span class="p">(</span><span class="n">z0</span><span class="p">,</span><span class="n">z1</span><span class="p">,</span><span class="n">z2</span><span class="p">,</span><span class="n">z3</span><span class="p">,</span><span class="n">z4</span><span class="p">,</span><span class="n">z5</span><span class="p">):</span>
-    <span class="n">plot</span><span class="p">([</span><span class="n">z0</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">z5</span><span class="o">.</span><span class="n">real</span><span class="p">],</span> <span class="p">[</span><span class="n">z0</span><span class="o">.</span><span class="n">imag</span><span class="p">,</span><span class="n">z5</span><span class="o">.</span><span class="n">imag</span><span class="p">],</span> <span class="s">&#39;k&#39;</span><span class="p">)</span>
-    <span class="n">plot</span><span class="p">([</span><span class="n">z3</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">z4</span><span class="o">.</span><span class="n">real</span><span class="p">],</span> <span class="p">[</span><span class="n">z3</span><span class="o">.</span><span class="n">imag</span><span class="p">,</span><span class="n">z4</span><span class="o">.</span><span class="n">imag</span><span class="p">],</span> <span class="s">&#39;k&#39;</span><span class="p">)</span>
-    <span class="n">plot</span><span class="p">([</span><span class="n">z1</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">z3</span><span class="o">.</span><span class="n">real</span><span class="p">],</span> <span class="p">[</span><span class="n">z1</span><span class="o">.</span><span class="n">imag</span><span class="p">,</span><span class="n">z3</span><span class="o">.</span><span class="n">imag</span><span class="p">],</span> <span class="s">&#39;g&#39;</span><span class="p">)</span>
-    <span class="n">plot</span><span class="p">([</span><span class="n">z2</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">z4</span><span class="o">.</span><span class="n">real</span><span class="p">],</span> <span class="p">[</span><span class="n">z2</span><span class="o">.</span><span class="n">imag</span><span class="p">,</span><span class="n">z4</span><span class="o">.</span><span class="n">imag</span><span class="p">],</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
-    <span class="n">axis</span><span class="p">(</span><span class="s">&#39;scaled&#39;</span><span class="p">)</span>
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;plot_frame_raw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;z0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z5&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;z0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z5&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;k&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;z3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z4&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;z3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z4&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;k&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;z1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;z1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;g&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;z2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z4&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;z2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z4&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;r&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;scaled&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     
-<span class="k">def</span> <span class="nf">float_raw</span><span class="p">(</span><span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="n">z50</span><span class="p">):</span>
-    <span class="n">w</span> <span class="o">=</span> <span class="mi">700</span>
-    <span class="n">h</span> <span class="o">=</span> <span class="mi">900</span>
-    <span class="n">xn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">yn</span> <span class="o">=</span> <span class="n">xn</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">1.</span>
-    <span class="n">xf</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">w</span><span class="o">*</span><span class="n">xn</span> <span class="o">+</span> <span class="p">((</span><span class="n">z50</span><span class="o">-</span><span class="n">z00</span><span class="p">)</span><span class="o">.</span><span class="n">real</span><span class="o">+</span><span class="mf">0.5</span><span class="o">*</span><span class="n">w</span><span class="p">)</span>
-    <span class="n">yf</span> <span class="o">=</span> <span class="n">h</span><span class="o">*</span><span class="n">yn</span> <span class="o">+</span> <span class="p">(</span><span class="n">z50</span><span class="o">-</span><span class="n">z00</span><span class="p">)</span><span class="o">.</span><span class="n">imag</span>
-    <span class="k">return</span> <span class="n">xf</span><span class="p">,</span> <span class="n">yf</span>
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;float_raw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z50&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;w&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;700&lt;/span&gt;
+    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;900&lt;/span&gt;
+    &lt;span class="n"&gt;xn&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linspace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;yn&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;xn&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;
+    &lt;span class="n"&gt;xf&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;xn&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;z50&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;yf&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;yn&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z50&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;xf&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;yf&lt;/span&gt;
 
-<span class="k">def</span> <span class="nf">plot_frame</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="n">z50</span><span class="p">,</span> <span class="n">verts</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
-    <span class="n">z0</span> <span class="o">=</span> <span class="n">transform</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="mf">0.</span><span class="p">)</span>
-    <span class="n">z3</span> <span class="o">=</span> <span class="n">transform</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="n">z30</span><span class="o">-</span><span class="n">z00</span><span class="p">,</span> <span class="n">z0</span><span class="p">)</span>
-    <span class="n">z4</span> <span class="o">=</span> <span class="n">transform</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="n">z40</span><span class="o">-</span><span class="n">z00</span><span class="p">,</span> <span class="n">z0</span><span class="p">)</span>
-    <span class="n">z5</span> <span class="o">=</span> <span class="n">transform</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="n">z50</span><span class="o">-</span><span class="n">z00</span><span class="p">,</span> <span class="n">z0</span><span class="p">)</span>
-    <span class="n">plot_frame_raw</span><span class="p">(</span><span class="n">z0</span><span class="p">,</span><span class="n">z10</span><span class="p">,</span><span class="n">z20</span><span class="p">,</span><span class="n">z3</span><span class="p">,</span><span class="n">z4</span><span class="p">,</span><span class="n">z5</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">verts</span><span class="p">:</span>
-        <span class="n">plot</span><span class="p">([</span><span class="n">z20</span><span class="o">.</span><span class="n">real</span><span class="p">],</span> <span class="p">[</span><span class="n">z20</span><span class="o">.</span><span class="n">imag</span><span class="p">],</span> <span class="s">&#39;wo&#39;</span><span class="p">)</span>
-        <span class="n">plot</span><span class="p">([</span><span class="n">z4</span><span class="o">.</span><span class="n">real</span><span class="p">],</span> <span class="p">[</span><span class="n">z4</span><span class="o">.</span><span class="n">imag</span><span class="p">],</span> <span class="s">&#39;wo&#39;</span><span class="p">)</span>
-        <span class="n">plot</span><span class="p">([</span><span class="n">z10</span><span class="o">.</span><span class="n">real</span><span class="p">],</span> <span class="p">[</span><span class="n">z10</span><span class="o">.</span><span class="n">imag</span><span class="p">],</span> <span class="s">&#39;wo&#39;</span><span class="p">)</span>
-        <span class="n">plot</span><span class="p">([</span><span class="n">z3</span><span class="o">.</span><span class="n">real</span><span class="p">],</span> <span class="p">[</span><span class="n">z3</span><span class="o">.</span><span class="n">imag</span><span class="p">],</span> <span class="s">&#39;wo&#39;</span><span class="p">)</span>
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;plot_frame&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;verts&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;False&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;z0&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;z3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;z4&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;z5&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z50&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;plot_frame_raw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;verts&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;wo&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;z4&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;z4&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;wo&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;wo&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;z3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;z3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;wo&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     
-<span class="k">def</span> <span class="nf">plot_float</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="n">z50</span><span class="p">):</span>
-    <span class="n">xf</span><span class="p">,</span> <span class="n">yf</span> <span class="o">=</span> <span class="n">float_raw</span><span class="p">(</span><span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="n">z50</span><span class="p">)</span>
-    <span class="n">zft</span> <span class="o">=</span> <span class="n">transform</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="n">xf</span> <span class="o">+</span> <span class="mi">1j</span><span class="o">*</span><span class="n">yf</span><span class="p">)</span>    
-    <span class="n">plot</span><span class="p">(</span><span class="n">zft</span><span class="o">.</span><span class="n">real</span><span class="p">,</span> <span class="n">zft</span><span class="o">.</span><span class="n">imag</span><span class="p">,</span> <span class="s">&#39;k&#39;</span><span class="p">)</span>
-    <span class="n">axis</span><span class="p">(</span><span class="s">&#39;scaled&#39;</span><span class="p">)</span>
-</pre></div>
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;plot_float&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z50&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;xf&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;yf&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;float_raw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;zft&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;xf&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1j&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;yf&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;    
+    &lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;zft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;zft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;k&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;scaled&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>As a starting point around which to tweak I have chosen the following dimensions (measured from a common base&nbsp;point)</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<input type="checkbox" class="toggle" id="toggle19"/>
-<label for="toggle19" class="toggle-label"/>Show/hide code</label>
-<div class="input">
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;As a starting point around which to tweak I have chosen the following dimensions (measured from a common base&amp;nbsp;point)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;input type="checkbox" class="toggle" id="toggle19"/&gt;
+&lt;label for="toggle19" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
+&lt;div class="input"&gt;
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight-ipynb"><pre class="ipynb"><span class="n">z00</span> <span class="o">=</span> <span class="o">-</span><span class="mf">700.0</span> <span class="o">+</span> <span class="mf">1000.0j</span>
-<span class="n">z10</span> <span class="o">=</span> <span class="o">-</span><span class="mf">927.0</span> <span class="o">+</span> <span class="mf">407.0j</span>
-<span class="n">z20</span> <span class="o">=</span> <span class="o">-</span><span class="mf">489.0</span> <span class="o">+</span> <span class="mf">907.0j</span>
-<span class="n">z30</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1796.0</span> <span class="o">+</span> <span class="mf">850.0j</span>
-<span class="n">z40</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1582.0</span> <span class="o">+</span> <span class="mf">1066.0j</span>
-<span class="n">z50</span> <span class="o">=</span> <span class="o">-</span><span class="mf">3500.0</span> <span class="o">+</span> <span class="mf">1000.0j</span>
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;z00&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;700.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;1000.0j&lt;/span&gt;
+&lt;span class="n"&gt;z10&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;927.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;407.0j&lt;/span&gt;
+&lt;span class="n"&gt;z20&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;489.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;907.0j&lt;/span&gt;
+&lt;span class="n"&gt;z30&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1796.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;850.0j&lt;/span&gt;
+&lt;span class="n"&gt;z40&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1582.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;1066.0j&lt;/span&gt;
+&lt;span class="n"&gt;z50&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;3500.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;1000.0j&lt;/span&gt;
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="p">[</span><span class="s">&#39;z</span><span class="si">%d</span><span class="s">0&#39;</span> <span class="o">%</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">)]:</span>
-    <span class="n">x</span><span class="o">=</span><span class="nb">eval</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="n">real</span>
-    <span class="n">y</span><span class="o">=</span><span class="nb">eval</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="n">imag</span>
-    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">v</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span>
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;v&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;z&lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s"&gt;0&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;)]:&lt;/span&gt;
+    &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;eval&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;real&lt;/span&gt;
+    &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;eval&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imag&lt;/span&gt;
+    &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
     
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;point&#39;</span><span class="p">,</span> <span class="s">&#39;x (mm)&#39;</span><span class="p">,</span> <span class="s">&#39;y (mm)&#39;</span><span class="p">])</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s">&#39;point&#39;</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-</pre></div>
+&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DataFrame&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;point&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;x (mm)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;y (mm)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;point&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
-
-
-<div class="output_wrapper">
-<div class="output">
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<div style="max-height:1000px;max-width:1500px;overflow:auto;">
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>x (mm)</th>
-      <th>y (mm)</th>
-    </tr>
-    <tr>
-      <th>point</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>z00</th>
-      <td> -700</td>
-      <td> 1000</td>
-    </tr>
-    <tr>
-      <th>z10</th>
-      <td> -927</td>
-      <td>  407</td>
-    </tr>
-    <tr>
-      <th>z20</th>
-      <td> -489</td>
-      <td>  907</td>
-    </tr>
-    <tr>
-      <th>z30</th>
-      <td>-1796</td>
-      <td>  850</td>
-    </tr>
-    <tr>
-      <th>z40</th>
-      <td>-1582</td>
-      <td> 1066</td>
-    </tr>
-    <tr>
-      <th>z50</th>
-      <td>-3500</td>
-      <td> 1000</td>
-    </tr>
-  </tbody>
-</table>
-<p>6 rows × 2&nbsp;columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Let&#8217;s see how it looks when we fold this configuration. Lets plot this configuration for 50 values of <span class="math">\(\theta \in (0, \pi/2)\)</span>. We see that with this framework it is easy to make modern&nbsp;art.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<input type="checkbox" class="toggle" id="toggle20"/>
-<label for="toggle20" class="toggle-label"/>Show/hide code</label>
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight-ipynb"><pre class="ipynb"><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">9</span><span class="p">))</span>
-<span class="k">for</span> <span class="n">theta</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.0</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">50</span><span class="p">):</span>
-    <span class="n">plot_frame</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="n">z50</span><span class="p">)</span>
-    <span class="n">plot_float</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">z00</span><span class="p">,</span> <span class="n">z10</span><span class="p">,</span> <span class="n">z20</span><span class="p">,</span> <span class="n">z30</span><span class="p">,</span> <span class="n">z40</span><span class="p">,</span> <span class="n">z50</span><span class="p">)</span>
-<span class="n">axis</span><span class="p">(</span><span class="s">&#39;off&#39;</span><span class="p">)</span>
-<span class="n">gcf</span><span class="p">()</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-<span class="bp">None</span>
-</pre></div>
-
-</div>
-</div>
-</div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
-<div class="output_wrapper">
-<div class="output">
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+
+&lt;div class="output_html rendered_html output_subarea "&gt;
+&lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;x (mm)&lt;/th&gt;
+      &lt;th&gt;y (mm)&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;point&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;z00&lt;/th&gt;
+      &lt;td&gt; -700&lt;/td&gt;
+      &lt;td&gt; 1000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;z10&lt;/th&gt;
+      &lt;td&gt; -927&lt;/td&gt;
+      &lt;td&gt;  407&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;z20&lt;/th&gt;
+      &lt;td&gt; -489&lt;/td&gt;
+      &lt;td&gt;  907&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;z30&lt;/th&gt;
+      &lt;td&gt;-1796&lt;/td&gt;
+      &lt;td&gt;  850&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;z40&lt;/th&gt;
+      &lt;td&gt;-1582&lt;/td&gt;
+      &lt;td&gt; 1066&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;z50&lt;/th&gt;
+      &lt;td&gt;-3500&lt;/td&gt;
+      &lt;td&gt; 1000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;6 rows × 2&amp;nbsp;columns&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Let&amp;#8217;s see how it looks when we fold this configuration. Lets plot this configuration for 50 values of &lt;span class="math"&gt;\(\theta \in (0, \pi/2)\)&lt;/span&gt;. We see that with this framework it is easy to make modern&amp;nbsp;art.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;input type="checkbox" class="toggle" id="toggle20"/&gt;
+&lt;label for="toggle20" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
+&lt;div class="input"&gt;
+
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;figsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;theta&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linspace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;plot_frame&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;plot_float&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z00&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;off&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;gcf&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tight_layout&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="bp"&gt;None&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-<div class="output_area"><div class="prompt"></div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsgAAAJcCAYAAADkXFIjAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsgAAAJcCAYAAADkXFIjAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3XdcVNfWN/CV3CRqoqJIExQE0aCJGhux944Ru4i9xRo7
 NrCLGnsXNRrFDioaFaOCWAALARQiiNgVpAgC0mHO7/1j3tnPbM7Y7s19bp7nWd+/7l5zmDlzuJ+P
 i5W11/4EAIgxxhhjjDFGRESf/qdvgDHGGGOMsb8TTpAZY4wxxhjTwwkyY4wxxhhjejhBZowxxhhj
@@ -7172,140 +6967,172 @@ yAcDMhERERGRDwZkIiIiIiIfDMhERERERD4YkImIiIiIfDAgExERERH5YEAmIiIiIvLBgExERERE
 fDAgExERERH5YEAmIiIiIvLBgExERERE5IMBmYiIiIjIBwMyEREREZEPBmQiIiIiIh8MyERERERE
 PhiQiYiIiIh8MCATEREREflgQCYiIiIi8sGATERERETk478ABK1fOTLJ2dQAAAAASUVORK5CYII=
 "
->
-</div>
+&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div></p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/om-arternas-uppkomst-lange-leve-e-boken.html" rel="bookmark"
-                           title="Permalink to Om arternas uppkomst - Länge leve e-boken">Om arternas uppkomst - Länge leve&nbsp;e-boken</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2012-06-27T23:19:00">
-                Ons 27 Juni 2012
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="/author/david.html">david</a>
-        </address>
-<p>In <a href="/category/books.html">Books</a>. </p>
-<p>tags: <a href="/tag/science.html">Science</a><a href="/tag/evolution.html">Evolution</a><a href="/tag/ebooks.html">ebooks</a></p>
-</footer><!-- /.post-info -->                <p><img src="/images/finkar.png" width="400"></p>
-<p>För en tid sedan letade jag efter en e-bokversion av <a href="http://en.wikipedia.org/wiki/On_the_Origin_of_Species">Om arternas
-uppkomst</a> av <a href="http://en.wikipedia.org/wiki/Charles_Darwin">Charles Darwin</a>. Jag upptäckte då att texten finns
-tillgänglig på <a href="http://sv.wikisource.org/wiki/Om_arternas_uppkomst_genom_naturligt_urval_eller_de_b%C3%A4st_utrustade_rasernas_best%C3%A5nd_i_kampen_f%C3%B6r_tillvaron">Wikisource</a> under en fri licens. Tyvärr kan inte
+&lt;/div&gt;&lt;/p&gt;</summary><category term="engineering"></category><category term="kinematics"></category></entry><entry><title>Om arternas uppkomst - Länge leve e-boken</title><link href="/om-arternas-uppkomst-lange-leve-e-boken.html" rel="alternate"></link><updated>2012-06-27T23:19:00+02:00</updated><author><name>david</name></author><id>tag:,2012-06-27:om-arternas-uppkomst-lange-leve-e-boken.html</id><summary type="html">&lt;p&gt;&lt;img src="/images/finkar.png" width="400"&gt;&lt;/p&gt;
+&lt;p&gt;För en tid sedan letade jag efter en e-bokversion av &lt;a href="http://en.wikipedia.org/wiki/On_the_Origin_of_Species"&gt;Om arternas
+uppkomst&lt;/a&gt; av &lt;a href="http://en.wikipedia.org/wiki/Charles_Darwin"&gt;Charles Darwin&lt;/a&gt;. Jag upptäckte då att texten finns
+tillgänglig på &lt;a href="http://sv.wikisource.org/wiki/Om_arternas_uppkomst_genom_naturligt_urval_eller_de_b%C3%A4st_utrustade_rasernas_best%C3%A5nd_i_kampen_f%C3%B6r_tillvaron"&gt;Wikisource&lt;/a&gt; under en fri licens. Tyvärr kan inte
 Wikisources programvara exportera texten till en fullgod e-bok lämplig
-för att läsa i sin helhet på t ex ...</p>
-                <a class="readmore" href="/om-arternas-uppkomst-lange-leve-e-boken.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/the-mathematics-of-shadows.html" rel="bookmark"
-                           title="Permalink to The Mathematics of shadows">The Mathematics of&nbsp;shadows</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2012-06-17T13:48:00">
-                Sön 17 Juni 2012
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="/author/david.html">david</a>
-        </address>
-<p>In <a href="/category/science.html">Science</a>. </p>
-<p>tags: <a href="/tag/astrophysics.html">Astrophysics</a><a href="/tag/sundial.html">Sundial</a><a href="/tag/earth-science.html">earth science</a></p>
-</footer><!-- /.post-info -->                <p>When I was working for a small wind turbine manufacturer I was asked to
+för att läsa i sin helhet på t ex en mobil eller en&amp;nbsp;läsplatta.&lt;/p&gt;
+&lt;p&gt;Nåväl, efter ett antal timmars arbete har jag nu gjort en e-bok av
+materialet som jag är rätt nöjd med. Den innehåller originaltexten från
+den första svenska upplagan från 1871 i översättning av &lt;em&gt;&lt;span class="caps"&gt;A. M.&lt;/span&gt; Selling&lt;/em&gt;.
+Denna översättning bygger på den femte upplagan av det engelskpråkiga&amp;nbsp;originalet.&lt;/p&gt;
+&lt;p&gt;I det händelse någon internetmedborgare är ute efter denna fantastiska
+och ännu helt läsbara bok så publicerar jag dem här. Var så&amp;nbsp;goda.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ladda ner&amp;nbsp;e-bok&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/images/origin.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt; version (4,2 &lt;span class="caps"&gt;MB&lt;/span&gt;)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/images/origin.epub"&gt;&lt;span class="caps"&gt;EPUB&lt;/span&gt; version (720&amp;nbsp;kB)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/davidosterberg/om-arternas-uppkomst"&gt;Källkoden på&amp;nbsp;github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="Science"></category><category term="Evolution"></category><category term="ebooks"></category></entry><entry><title>The Mathematics of shadows</title><link href="/the-mathematics-of-shadows.html" rel="alternate"></link><updated>2012-06-17T13:48:00+02:00</updated><author><name>david</name></author><id>tag:,2012-06-17:the-mathematics-of-shadows.html</id><summary type="html">&lt;p&gt;When I was working for a small wind turbine manufacturer I was asked to
 calculate the number of hours per year the houses in the neighborhood of
 our prototype wind farm would be exposed to shadow flicker from our wind
-turbine. Now, there are software that calculates this sort of ...</p>
-                <a class="readmore" href="/the-mathematics-of-shadows.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/discovery-of-the-week.html" rel="bookmark"
-                           title="Permalink to Discovery of the week">Discovery of the&nbsp;week</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2012-06-03T21:18:00">
-                Sön 03 Juni 2012
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="/author/david.html">david</a>
-        </address>
-<p>In <a href="/category/linux.html">Linux</a>. </p>
-<p>tags: <a href="/tag/arch.html">Arch</a><a href="/tag/linux.html">Linux</a></p>
-</footer><!-- /.post-info -->                <p><img alt="The Arch Linux Logo" src="http://upload.wikimedia.org/wikipedia/commons/5/59/Archlogo.png" /></p>
-<p>I have long wanted to try out <a href="http://www.archlinux.org/">Arch Linux</a> and yesterday I took the
+turbine. Now, there are software that calculates this sort of thing with
+a few clicks of the mouse (the dominant code beeing &lt;a href="http://www.emd.dk/WindPRO/Frontpage"&gt;WindPro&lt;/a&gt;).
+However, these programs cost money, and they are no fun. Instead I
+solved the problem myself. And to do that I first had to immerse myself
+in the theory of&amp;nbsp;sundials.&lt;/p&gt;
+&lt;p&gt;First consider a flagpole casting a shadow on a flat field. There are
+only a few parameters that influence where the tip of the shadow will be
+at a particular time. There are some astronomical parameters, namely:
+the earth axial tilt, the earth rotational speed, the length of the
+solar year, the eccentricity of the orbital ellipse, and the angle
+between the major axis of the orbital ellipse and the line of&amp;nbsp;solstices.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/orbit.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Then there are some parameters of the site: height of pole, latitude and
+longitude. And there is a convention where the year is said to begin
+relating to the winter&amp;nbsp;solstice.&lt;/p&gt;
+&lt;p&gt;The rest is a matter of geometry really. Basically one must keep track
+of exactly how earth is facing the sun at any particular instant in&amp;nbsp;time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Coordinate&amp;nbsp;tranformations&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is how I think about it. I want to find a transformation from
+geographic coordinates (which rotate with earth) to a coordinate system
+with origo in the center of the earth that always has the sun in the
+direction of the y-axis and the z-axis normal to the orbital plane. In
+this system it should be easy to find the tip of the shadow by finding
+the intersection between the line passing from the sun, through the tip
+of the pole and the sphere that is earth. Once this is done we go back
+to geographic coordinates by applying the inverse&amp;nbsp;tranformation.&lt;/p&gt;
+&lt;p&gt;To implement this we first want a coordinate transformation from the
+geographic coordinate system (longitude $\phi$,
+latitude $\delta$, height $h$)
+rotating with earth to a cartesian system rotating with earth. This is a
+simple adaption of the spherical coordinate transformation. The only
+difference being that the latitude replaces the normal angle from the
+north&amp;nbsp;pole.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{rcl}
+ x &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; = &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; (R+h) \sin(\pi/2-\delta)\cos \phi &amp;#92;
+ y &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; = &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; (R+h) \sin(\pi/2-\delta)\sin \phi &amp;#92;
+ z &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; = &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; (R+h) \cos (\pi/2 - \delta) &amp;#92;
+\end{array}&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;What we want to do next is to transform a point expressed this way to a
+nonrotating coordinate system. The transformation matrix for rotation
+about the z-axis&amp;nbsp;is&lt;/p&gt;
+&lt;p&gt;$$
+R_z(\Omega t) = \left(\begin{array}{ccc}
+\cos \Omega t &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; -\sin \Omega t &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 0 &amp;#92;
+\sin \Omega t &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt;  \cos \Omega t &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 0 &amp;#92;
+0 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 0 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 1 \end{array}\right)&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;where $\Omega$ is the rotational speed of earth $2 \pi / 86164.09890369 $&amp;nbsp;rad/s.&lt;/p&gt;
+&lt;p&gt;Next we want to express this in a system aliged with the earth orbital
+plane. Thus we want to rotate about the universal y-axis by the axial
+tilt angle $\alpha = 23.4{}^\circ$. The transformation matrix for this rotation&amp;nbsp;is&lt;/p&gt;
+&lt;p&gt;$$
+R_x(\alpha) = \left(\begin{array}{ccc} 
+1 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 0 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 0 &amp;#92;
+0 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; \cos \alpha &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; - \sin \alpha &amp;#92;
+0 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; \sin \alpha &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; \cos \alpha 
+\end{array} \right)&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;Finally we want to rotate this system so we face the&amp;nbsp;sun.&lt;/p&gt;
+&lt;p&gt;$$
+R_z(-\theta(t)) = \left( \begin{array}{ccc}
+\cos \theta(t) &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; \sin \theta(t) &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 0 &amp;#92;
+-\sin \theta(t) &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; \cos \theta(t) &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 0 &amp;#92;
+ 0 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 0 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 1 
+\end{array} \right)&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;where $\theta(t)$ is the orbital angle. This is a
+function that must be computed based on orbital&amp;nbsp;mechanics.&lt;/p&gt;
+&lt;p&gt;The total transformation from ($\phi$,$\delta$) is&amp;nbsp;thus&lt;/p&gt;
+&lt;p&gt;$$
+\left(\begin{array}{c} 
+X &amp;#92;
+Y &amp;#92;
+Z
+\end{array}\right) = T(\phi,\delta) = R_z(-\theta(t))
+R_x(\alpha) R_z(\Omega t) \left(\begin{array}{c} (R+h)
+\sin(\pi/2-\delta)\cos \phi &amp;#92; (R+h) \sin(\pi/2-\delta)\sin
+\phi &amp;#92; (R+h) \cos (\pi/2 - \delta) \end{array}\right)&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;The inverse of this tranformation is obtained&amp;nbsp;by&lt;/p&gt;
+&lt;p&gt;$$ \begin{array}{rcl} h &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; = &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt;
+\sqrt{x^2+y^2+z^2}-R &amp;#92; \phi &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; = &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt;
+\mbox{arctan}\left(\frac{y}{x}\right) &amp;#92; \delta &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; = &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; \pi/2 -
+\mbox{arccos}\left(\frac{z}{r}\right) \end{array}&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;where $$(x,y,z)$$ is obtained by inversing the&amp;nbsp;rotations&lt;/p&gt;
+&lt;p&gt;$$ \left(\begin{array}{c} x &amp;#92; y &amp;#92; z
+\end{array}\right) = \left(R_z(-\theta(t)) R_x(\alpha)
+R_z(\Omega t)\right)^{-1} \left(\begin{array}{c} X &amp;#92; Y &amp;#92; Z
+\end{array}\right)&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Intersection between ray and earth&amp;nbsp;surface&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Assume the earth surface is a perfect sphere centered in origo. Also
+assume all light rays from the sun are coming in the -Y-direction. Now
+consider a point $\vec{p}$ representing the
+location of the flagpole tip. The tip may or may not cast a shadow on&amp;nbsp;earth.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/line-sphere.png" /&gt;&lt;/p&gt;
+&lt;p&gt;To find the location of the shadow simply apply the formula for line
+sphere&amp;nbsp;intersection&lt;/p&gt;
+&lt;p&gt;$$ \ d = -\hat{Y} \cdot \vec{p} - \sqrt{\left(-\hat{Y} \cdot \vec{p}\right)^2-\vec{p} \cdot \vec{p}+R^2}&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;where $R$ is the earth radius and $d$ is the distance from $\vec{p}$ to
+the intersection. $\hat{Y}$ is a unit vector in the
+Y-direction. If $d$ is real and greater than zero
+the location of the shadow&amp;nbsp;is&lt;/p&gt;
+&lt;p&gt;$$ \vec{s} = \vec{p} - d \hat{Y}.&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;I have implemented this theory as a python module. The source is over at &lt;a href="https://github.com/davidosterberg/shadowtime"&gt;gitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A sundial for my back&amp;nbsp;yard&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As an application of this theory I have decided to construct a sundial
+custom made for my backyard. This is a bit of a project of its own and
+I will delay the details for a later blog. The following picture is what
+I have come up with so far. This sundial shows approximate date and also
+takes daylight saving into&amp;nbsp;account.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/sundial_jonkoping.png" /&gt;&lt;/p&gt;</summary><category term="Astrophysics"></category><category term="Sundial"></category><category term="earth science"></category></entry><entry><title>Discovery of the week</title><link href="/discovery-of-the-week.html" rel="alternate"></link><updated>2012-06-03T21:18:00+02:00</updated><author><name>david</name></author><id>tag:,2012-06-03:discovery-of-the-week.html</id><summary type="html">&lt;p&gt;&lt;img alt="The Arch Linux Logo" src="http://upload.wikimedia.org/wikipedia/commons/5/59/Archlogo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;I have long wanted to try out &lt;a href="http://www.archlinux.org/"&gt;Arch Linux&lt;/a&gt; and yesterday I took the
 step and installed it on my main machine. My first impression is that I
-am super impressed. Why?  For five&nbsp;reasons</p>
-<ol>
-<li>It really was not hard to install and get everything to work. Sure
-    some Linux ...</li></ol>
-                <a class="readmore" href="/discovery-of-the-week.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/hello-world.html" rel="bookmark"
-                           title="Permalink to Hello world!">Hello&nbsp;world!</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2012-06-03T17:24:00">
-                Sön 03 Juni 2012
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="/author/david.html">david</a>
-        </address>
-<p>In <a href="/category/opinion.html">Opinion</a>. </p>
-<p>tags: <a href="/tag/blogging.html">blogging</a><a href="/tag/self-improvement.html">self improvement</a></p>
-</footer><!-- /.post-info -->                <p>This is my first post on a brand new blog. Maybe it can seem
+am super impressed. Why?  For five&amp;nbsp;reasons&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It really was not hard to install and get everything to work. Sure
+    some Linux experience and an extra computer for the online install
+    guide is essential for success but everything worked by just
+    following the step by step instructions on the official install
+    guide. No googling, no sifting through forum threads and mailing
+    list archives was&amp;nbsp;required.&lt;/li&gt;
+&lt;li&gt;The packets are bleeding edge. Yet things work. Something that has
+    annoyed me when running &lt;a href="http://www.opensuse.org/en/"&gt;openSUSE&lt;/a&gt; for the last six months is that
+    unusual packages are often old, sometimes ancient. This is not so
+    with Arch Linux. More often than not, Arch ships the very latest&amp;nbsp;version.&lt;/li&gt;
+&lt;li&gt;No religion concerning non-free software. I love freedom but I also
+    love being practical. Sometimes one-of-a-kind software codes have
+    weird licences. This can be a problem but it can also be worth it
+    and Arch leaves this choice up to the&amp;nbsp;user.&lt;/li&gt;
+&lt;li&gt;Arch uses a rolling release model. I do not exactly know why I like
+    this so much because it seems I always break my systems about every
+    6 months anyway. But I do like&amp;nbsp;it.&lt;/li&gt;
+&lt;li&gt;The &lt;span class="caps"&gt;AUR&lt;/span&gt;, which makes available even the very unusual packages that I
+    use and love. Such as the free and open source structural analysis
+    code &lt;a href="http://www.dhondt.de/"&gt;CalculiX&lt;/a&gt; and its&amp;nbsp;dependencies.&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="Arch"></category><category term="Linux"></category></entry><entry><title>Hello world!</title><link href="/hello-world.html" rel="alternate"></link><updated>2012-06-03T17:24:00+02:00</updated><author><name>david</name></author><id>tag:,2012-06-03:hello-world.html</id><summary type="html">&lt;p&gt;This is my first post on a brand new blog. Maybe it can seem
 anachronistic to start blogging in 2012 but I think the media has a lot
 to offer. I have always been a tinkerer. I like investigating things. I
-like solving technichal problems my own way. I have ...</p>
-                <a class="readmore" href="/hello-world.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 1
-</p>
-            </section><!-- /#content -->
-        <section id="extras" class="body">
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
-</body>
-</html>
+like solving technichal problems my own way. I have often found myself
+working on short (sometimes trivially short) projects that could be
+written up and published on a blog for others to read if they share my&amp;nbsp;interests.&lt;/p&gt;
+&lt;p&gt;The inspiration that made me take this step right now was Jeff Atwoods
+talk where he urges us to &lt;a href="http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/"&gt;stop sucking by starting to fail in
+public.&lt;/a&gt;.&lt;/p&gt;</summary><category term="blogging"></category><category term="self improvement"></category></entry></feed>
