@@ -10,13 +10,14 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;input type="checkbox" class="toggle" id="toggle16"/&gt;
-&lt;label for="toggle16" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
+&lt;input type="checkbox" class="toggle" id="toggle1"/&gt;
+&lt;label for="toggle1" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
 &lt;div class="input"&gt;
 
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Image&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.f-boat.com/media/F-27/F-27foldingw.jpg&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;IPython.display&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Image&lt;/span&gt;
+&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Image&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.f-boat.com/media/F-27/F-27foldingw.jpg&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
@@ -743,13 +744,13 @@ pVa4HaR9EExtOklcckkaU9btqmIO+OPNJckkmqf/2Q==
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;input type="checkbox" class="toggle" id="toggle17"/&gt;
-&lt;label for="toggle17" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
+&lt;input type="checkbox" class="toggle" id="toggle2"/&gt;
+&lt;label for="toggle2" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
 &lt;div class="input"&gt;
 
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Image&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;folding_variables.png&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Image&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;folding_variables.png&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;600&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
@@ -1518,7 +1519,7 @@ GAAAAABYhAEGAAAAABZhgAEAAACARRhgAAAAAGARBhgAAAAAWIQBBgAAAAAWYYABAAAAgEUYYAAA
 AABgEQYYAAAAAFiEAQYAAAAAFmGAAQAAAIBFGGAAAAAAYBEGGAAAAABYhAEGAAAAABZhgAEAAACA
 RRhgAAAAAGARBhgAAAAAWIQBBgAAAAAWYYABAAAAgEX+H/rGg3c6y10YAAAAAElFTkSuQmCC
 "
-width=500
+width=600
 &gt;
 &lt;/div&gt;
 
@@ -1548,8 +1549,8 @@ z_{0} + (z_{40} - z_{00}) e^{i \theta} = z_{4}&amp;nbsp;\]&lt;/span&gt;&lt;/p&gt
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;input type="checkbox" class="toggle" id="toggle18"/&gt;
-&lt;label for="toggle18" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
+&lt;input type="checkbox" class="toggle" id="toggle3"/&gt;
+&lt;label for="toggle3" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
 &lt;div class="input"&gt;
 
 &lt;div class="inner_cell"&gt;
@@ -1635,8 +1636,8 @@ z_{0} + (z_{40} - z_{00}) e^{i \theta} = z_{4}&amp;nbsp;\]&lt;/span&gt;&lt;/p&gt
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;input type="checkbox" class="toggle" id="toggle19"/&gt;
-&lt;label for="toggle19" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
+&lt;input type="checkbox" class="toggle" id="toggle4"/&gt;
+&lt;label for="toggle4" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
 &lt;div class="input"&gt;
 
 &lt;div class="inner_cell"&gt;
@@ -1739,8 +1740,8 @@ z_{0} + (z_{40} - z_{00}) e^{i \theta} = z_{4}&amp;nbsp;\]&lt;/span&gt;&lt;/p&gt
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;input type="checkbox" class="toggle" id="toggle20"/&gt;
-&lt;label for="toggle20" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
+&lt;input type="checkbox" class="toggle" id="toggle5"/&gt;
+&lt;label for="toggle5" class="toggle-label"/&gt;Show/hide code&lt;/label&gt;
 &lt;div class="input"&gt;
 
 &lt;div class="inner_cell"&gt;
@@ -6975,7 +6976,8 @@ PhiQiYiIiIh8MCATEREREflgQCYiIiIi8sGATERERETk478ABK1fOTLJ2dQAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/p&gt;</summary><category term="engineering"></category><category term="kinematics"></category></entry><entry><title>Om arternas uppkomst - Länge leve e-boken</title><link href="/om-arternas-uppkomst-lange-leve-e-boken.html" rel="alternate"></link><updated>2012-06-27T23:19:00+02:00</updated><author><name>david</name></author><id>tag:,2012-06-27:om-arternas-uppkomst-lange-leve-e-boken.html</id><summary type="html">&lt;p&gt;&lt;img src="/images/finkar.png" width="400"&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The notebook that is the basis of this post can be downloaded  &lt;a href="/downloads/notebooks/The_art_of_folding_boats.ipynb"&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</summary><category term="engineering"></category><category term="kinematics"></category></entry><entry><title>Om arternas uppkomst - Länge leve e-boken</title><link href="/om-arternas-uppkomst-lange-leve-e-boken.html" rel="alternate"></link><updated>2012-06-27T23:19:00+02:00</updated><author><name>david</name></author><id>tag:,2012-06-27:om-arternas-uppkomst-lange-leve-e-boken.html</id><summary type="html">&lt;p&gt;&lt;img src="/images/finkar.png" width="400"&gt;&lt;/p&gt;
 &lt;p&gt;För en tid sedan letade jag efter en e-bokversion av &lt;a href="http://en.wikipedia.org/wiki/On_the_Origin_of_Species"&gt;Om arternas
 uppkomst&lt;/a&gt; av &lt;a href="http://en.wikipedia.org/wiki/Charles_Darwin"&gt;Charles Darwin&lt;/a&gt;. Jag upptäckte då att texten finns
 tillgänglig på &lt;a href="http://sv.wikisource.org/wiki/Om_arternas_uppkomst_genom_naturligt_urval_eller_de_b%C3%A4st_utrustade_rasernas_best%C3%A5nd_i_kampen_f%C3%B6r_tillvaron"&gt;Wikisource&lt;/a&gt; under en fri licens. Tyvärr kan inte
