@@ -105,15 +105,18 @@ function format_time(t) {
     ts += t1.getUTCHours() + ':';
   }
 
-  if (t1.getMinutes() < 10)
-    ts += "0";
+  if ((t1.getMinutes() > 0) || (t1.getUTCHours() > 0)) {
+    if (t1.getMinutes() < 10)
+      ts += "0";
 
-  ts += t1.getMinutes() + ':';
+    ts += t1.getMinutes() + ':';
 
-  if (t1.getSeconds() < 10)
-    ts += '0';
+    if (t1.getSeconds() < 10)
+      ts += '0';
+  }
 
   ts += t1.getSeconds();
+
   return ts;
 }
 
@@ -132,23 +135,17 @@ function update() {
   cnt1.innerHTML = format_time(t);
 
   elapsed_step_time = Date.now() - step_start_time;
-  t = (step_time - elapsed_step_time)/1000;
-  if (t < 2) {
+  t = step_time - elapsed_step_time;
+  if (t < 2000) {
     document.body.style.backgroundColor = '#e8bd5c';
   }
   if (t < 0) {
     document.body.style.backgroundColor = '#90c0de';
-    change_state()
-    elapsed_step_time = 0;
-    t = (step_time - elapsed_step_time)/1000;
+    change_state();
+    t = step_time;
   }
 
-  ts = "";
-  if (t<10)
-    ts = '0';
-  ts += Math.floor(t) + ' s';
-
-  cnt2.innerHTML = ts;
+  cnt2.innerHTML = format_time(t) + ' s';
 
 }
 
