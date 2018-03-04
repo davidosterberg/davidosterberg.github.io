@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title>Start stop test</title>
+  <style>
+  body {
+    background-color: #90c0de;
+    color: #1c7bb7;
+    font-family: Arial, serif;
+    font-size: 26px;
+  }
+  .label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .cnt {
+    display: inline-block;
+    width: auto;
+  }
+  #instruction {
+    margin: 10px;
+  }
+  </style>
+</head>
+<body>
+  <div id="instruction">The purpose of the test is to test the yaw motor under
+  severe yaw activity conditions. The test is consists of yawing the turbine
+  back and forth during low wind conditions for one hour</div>
+
+  <span class="label">Time until next step:</span><div class='cnt' id="countdown2"></div><br>
+  <span class="label">Time until end of test:</span><div class='cnt' id="countdown1">01:00:00</div><br>
+  <input type="button" id="start" value="Start test" onclick="start_test()">
+  <script>
+
+var start_time = 0;
+var elapsed_time = 0;
+var test_time = 3600000;
+var yaw_time = 12000;
+var stop_time = 60000 - yaw_time;
+var state = 0;
+var step_time = 0;
+
+ins = document.getElementById('instruction');
+cnt1 = document.getElementById('countdown1');
+cnt2 = document.getElementById('countdown2');
+
+
+
+function start_test() {
+  document.getElementById('start').style.display = 'none';
+  start_time = Date.now();
+  change_state();
+  setInterval(update, 100);
+}
+
+function change_state() {
+  switch (state) {
+    case 0:
+      state = 1;
+      ins.innerHTML = "Yaw clockwise";
+      step_time = yaw_time;
+      break;
+    case 1:
+      state = 2;
+      ins.innerHTML = "stop yawing";
+      step_time = stop_time;
+      break;
+    case 2:
+      state = 3;
+      ins.innerHTML = "Yaw counter clockwise";
+      step_time = yaw_time;
+      break;
+    case 3:
+      state =  0;
+      ins.innerHTML = "Stop yawing";
+      step_time = stop_time;
+      break;
+  }
+  step_start_time = Date.now();
+}
+
+function update() {
+  elapsed_time = Date.now() - start_time;
+  var t1 = new Date(test_time - elapsed_time);
+
+  if (t1.getHours() < 10)
+    var t1s = "0";
+  else
+    var t1s = "";
+
+  if (t1.getSeconds() < 10)
+    t1s = t1.getMinutes() + ':0' + t1.getSeconds();
+  else
+    t1s = t1.getMinutes() + ':' + t1.getSeconds();
+
+  cnt1.innerHTML = t1s;
+
+  elapsed_step_time = Date.now() - step_start_time;
+  t = (step_time - elapsed_step_time)/1000;
+  if (t < 2) {
+    document.body.style.backgroundColor = '#e8bd5c';
+  }
+  if (t < 0) {
+    document.body.style.backgroundColor = '#90c0de';
+    change_state()
+    elapsed_step_time = Date.now() - step_start_time;
+    t = (step_time - elapsed_step_time)/1000;
+  }
+
+  if (t<10)
+    cnt2.innerHTML = '0'+Math.floor(t) + ' s';
+  else
+    cnt2.innerHTML = Math.floor(t) + ' s';
+}
+
+  </script>
+</body>
+</html>
