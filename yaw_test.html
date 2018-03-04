@@ -6,9 +6,9 @@
     background-color: #90c0de;
     color: #1c7bb7;
     font-family: Arial, serif;
+    font-size: 4.0vw;
   }
   .label {
-    font-size: 4.0vw;
     margin-right: 2.0vw;
   }
   .cnt {
@@ -17,7 +17,6 @@
   }
   #description {
     margin: 1.0vw;
-    font-size: 4.0vw;
   }
   #instruction {
     margin: 1.0vw;
@@ -46,17 +45,19 @@
 
 var start_time = 0;
 var elapsed_time = 0;
-var test_time = 3600000;
+var test_time = 120000;
 var yaw_time = 12000;
 var stop_time = 60000 - yaw_time;
 var state = 0;
 var step_time = 0;
 
-ins = document.getElementById('instruction');
-cnt1 = document.getElementById('countdown1');
-cnt2 = document.getElementById('countdown2');
+var ins = document.getElementById('instruction');
+var cnt1 = document.getElementById('countdown1');
+var cnt2 = document.getElementById('countdown2');
 
+cnt1.innerHTML = format_time(test_time);
 
+var timer;
 
 function start_test() {
   document.getElementById('start').style.display = 'none';
@@ -64,7 +65,7 @@ function start_test() {
   document.getElementById('l2').style.display = 'inline-block';
   start_time = Date.now();
   change_state();
-  setInterval(update, 100);
+  timer = setInterval(update, 100);
 }
 
 function change_state() {
@@ -97,6 +98,13 @@ function format_time(t) {
   var t1 = new Date(t);
 
   var ts = "";
+
+  if (t1.getUTCHours() > 0) {
+    if (t1.getUTCHours() < 10)
+      ts += "0";
+    ts += t1.getUTCHours() + ':';
+  }
+
   if (t1.getMinutes() < 10)
     ts += "0";
 
@@ -112,7 +120,16 @@ function format_time(t) {
 function update() {
   elapsed_time = Date.now() - start_time;
 
-  cnt1.innerHTML = format_time(test_time - elapsed_time);
+  t = test_time - elapsed_time;
+
+  if (t < 0) {
+    ins.innerHTML = "Test completed.";
+    cnt1.innerHTML = '00:00';
+    cnt2.style.display = 'none';
+    clearInterval(timer);
+
+  }
+  cnt1.innerHTML = format_time(t);
 
   elapsed_step_time = Date.now() - step_start_time;
   t = (step_time - elapsed_step_time)/1000;
