@@ -17,7 +17,7 @@
   }
   #description {
     margin: 1.0vw;
-    font-size: 2.0vw;
+    font-size: 4.0vw;
   }
   #instruction {
     margin: 1.0vw;
@@ -71,12 +71,12 @@ function change_state() {
   switch (state) {
     case 0:
       state = 1;
-      ins.innerHTML = "Yaw counter clockwise";
+      ins.innerHTML = "Yaw clockwise";
       step_time = yaw_time;
       break;
     case 1:
       state = 2;
-      ins.innerHTML = "Stop yawing";
+      ins.innerHTML = "Do not yaw";
       step_time = stop_time;
       break;
     case 2:
@@ -86,28 +86,33 @@ function change_state() {
       break;
     case 3:
       state =  0;
-      ins.innerHTML = "Stop yawing";
+      ins.innerHTML = "Do not yaw";
       step_time = stop_time;
       break;
   }
   step_start_time = Date.now();
 }
 
-function update() {
-  elapsed_time = Date.now() - start_time;
-  var t1 = new Date(test_time - elapsed_time);
+function format_time(t) {
+  var t1 = new Date(t);
 
-  if (t1.getHours() < 10)
-    var t1s = "0";
-  else
-    var t1s = "";
+  var ts = "";
+  if (t1.getMinutes() < 10)
+    ts += "0";
+
+  ts += t1.getMinutes() + ':';
 
   if (t1.getSeconds() < 10)
-    t1s = t1.getMinutes() + ':0' + t1.getSeconds();
-  else
-    t1s = t1.getMinutes() + ':' + t1.getSeconds();
+    ts += '0';
 
-  cnt1.innerHTML = t1s;
+  ts += t1.getSeconds();
+  return ts;
+}
+
+function update() {
+  elapsed_time = Date.now() - start_time;
+
+  cnt1.innerHTML = format_time(test_time - elapsed_time);
 
   elapsed_step_time = Date.now() - step_start_time;
   t = (step_time - elapsed_step_time)/1000;
@@ -117,14 +122,17 @@ function update() {
   if (t < 0) {
     document.body.style.backgroundColor = '#90c0de';
     change_state()
-    elapsed_step_time = Date.now() - step_start_time;
+    elapsed_step_time = 0;
     t = (step_time - elapsed_step_time)/1000;
   }
 
+  ts = "";
   if (t<10)
-    cnt2.innerHTML = '0'+Math.floor(t) + ' s';
-  else
-    cnt2.innerHTML = Math.floor(t) + ' s';
+    ts = '0';
+  ts += Math.floor(t) + ' s';
+
+  cnt2.innerHTML = ts;
+
 }
 
   </script>
