@@ -6,27 +6,40 @@
     background-color: #90c0de;
     color: #1c7bb7;
     font-family: Arial, serif;
-    font-size: 26px;
   }
   .label {
-    font-size: 16px;
-    margin-right: 10px;
+    font-size: 4.0vw;
+    margin-right: 2.0vw;
   }
   .cnt {
     display: inline-block;
-    width: auto;
+    font-size: 10vw;
+  }
+  #description {
+    margin: 1.0vw;
+    font-size: 2.0vw;
   }
   #instruction {
-    margin: 10px;
+    margin: 1.0vw;
+    font-size: 9vw;
   }
+  #start {
+    font-size: 10.0vw;
+    margin: 2.0vw;
+  }
+
   </style>
 </head>
 <body>
-  <div id="instruction">The purpose of the test is to test the yaw motor under
-  severe yaw activity conditions. The test is consists of yawing the turbine
-  back and forth during low wind conditions for one hour</div>
+  <div id="description">
+    The purpose of the test is to test the yaw motor under
+    severe yaw activity conditions. The test is consists of yawing the turbine
+    back and forth during low wind conditions for one hour
+  </div>
 
-  <span class="label">Time until next step:</span><div class='cnt' id="countdown2"></div><br>
+  <div id="instruction"></div>
+
+  <span class="label" id="l2" style='display:none;'>Time until next step:</span><div class='cnt' id="countdown2"></div><br>
   <span class="label">Time until end of test:</span><div class='cnt' id="countdown1">01:00:00</div><br>
   <input type="button" id="start" value="Start test" onclick="start_test()">
   <script>
@@ -47,6 +60,8 @@ cnt2 = document.getElementById('countdown2');
 
 function start_test() {
   document.getElementById('start').style.display = 'none';
+  document.getElementById('description').style.display = 'none';
+  document.getElementById('l2').style.display = 'inline-block';
   start_time = Date.now();
   change_state();
   setInterval(update, 100);
@@ -56,12 +71,12 @@ function change_state() {
   switch (state) {
     case 0:
       state = 1;
-      ins.innerHTML = "Yaw clockwise";
+      ins.innerHTML = "Yaw counter clockwise";
       step_time = yaw_time;
       break;
     case 1:
       state = 2;
-      ins.innerHTML = "stop yawing";
+      ins.innerHTML = "Stop yawing";
       step_time = stop_time;
       break;
     case 2:
